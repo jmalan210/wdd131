@@ -4,7 +4,7 @@
 
 body {
     display: grid;
-    grid-template: auto 1fr 1fr auto / auto 1fr 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
 }
 
 header { 
@@ -24,14 +24,20 @@ header p {
 .navigation {
     grid-column: 1 / 5;
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
     justify-content: space-evenly;
+    list-style: none;
     background-color: rgb(65, 96, 155);
-    color: white;
     padding: 10px;
-    margin-bottom: 0px
-    
+    margin-bottom: 0px;   
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    color: palevioletred;
 }
 
 main {

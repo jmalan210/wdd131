@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Jennifer Malan's homepage for WDD 131 - Dynamic Web Fundamentals. Web design and development, html, javascript, css, byu pathways.">
+    <meta name="author" content="Jennifer Malan">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jennifer Malan</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Malan</h1>
+    <header>
+    <span>WDD 131: Dynamic Web Fundamentals - Jennifer Malan</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jennifer-malan-766361298/">LinkedIn</a></li>
+                <li><a href=" https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/50?lang=eng&id=p41-p42#p41">Scripture</a></li>
+                <li><a href="index.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="card" id="left">
+            <h1>About Me</h1>
+            <img src="images/profile.webp" alt="image of Jennifer Malan and her husband" class="self">
+            <p>My name is Jennifer Malan. I lived most of my life in northern California, but moved to beautiful southeast Idaho four years ago. I have been married for 27 years, and I have four children, ages 22, 20, 16, and 12. I am doing some BYU Pathways classes to learn new skills and to hopefully rejoin the work force sometime soon. I love to read and travel. </p> 
+        
+        <h2 class="poky">Pocatello, Idaho</h2>
+        <img src="images/pokyflag.png" alt="Pocatello, Idaho flag" class="flag">
+            <p>Located in southeast Idaho, Pocatello was originally a railroad town.  Its nickname is "gateway to the west". Pocatello is home to Idaho State University, and is surrounded by mountains on three sides. There are multiple outdoor activities available, including fishing, hiking, camping, boating, and more. </p>
+        </section>
+    
+        <section class="card" id="right">
+        <h2>Web Dev Resources</h2>
+        <div class="list">
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="https://stackoverflow.com/questions">Stack Overflow</a></li>
+                <li><a href="https://www.codecademy.com/catalog/subject/web-development">Code Academy</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+            </ul>
+        </div>
+        </section>
+    </main> 
+    <footer>
+        <p>©️<span id="year"></span>| Jennifer Malan | Idaho, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

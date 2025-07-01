@@ -130,8 +130,11 @@ p {
     padding: 10px;
     
 }
+
+
 h1, h2 {
     font-family: var(--heading-font);
+    font-size: 1.3rem;
     text-align: center;
     padding: 10px;
     color: var(--dark-blue);

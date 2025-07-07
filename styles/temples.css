@@ -116,6 +116,11 @@ h2 {
 
 }
 
+figure img {
+    width: 300px;
+    height: auto;
+}
+
 figcaption {
     font-family: var(--text-font);
 }

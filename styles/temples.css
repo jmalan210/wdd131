@@ -41,10 +41,10 @@ h1 {
 
 #menu {
     display:block;
-    background-color: white;
+    background-color: var(--main-color);
     text-decoration: none;
     font-size: 2rem;
-    color: var(--main-color);
+    color: white;
     padding: 0.5rem 0.75rem;
 }
 
@@ -69,6 +69,7 @@ nav {
 
 .navigation li {
     display: none;
+    text-align: center;
 }
 
 .navigation a {

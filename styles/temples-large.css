@@ -38,7 +38,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    h1 {
+    h2 {
         grid-column: 1 / 4;
     }
 

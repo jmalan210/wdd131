@@ -28,12 +28,12 @@ header {
     font-family: var(--text-font);
 }
 
-header p {
+h1 {
     font-family: var(--header-font);
     font-size: 2.5rem;
     font-weight:900;
     color: white;
-    text-align: center;
+    text-align: left;
     padding-left: 20px;
     
     
@@ -108,7 +108,7 @@ main {
 
 }
 
-h1 {
+h2 {
    
     font-family: var(--header-font);
     font-size: 2.7rem;

@@ -33,8 +33,8 @@ h1 {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-top: 25px solid var(--black);
-    border-bottom: 25px solid var(--black);
+    border-top: 15px solid var(--black);
+    border-bottom: 15px solid var(--black);
     margin: 0;
     
        
@@ -98,11 +98,13 @@ footer {
       
    
 }
-
+/*large view */
 @media (min-width: 1000px) {
 
     .hero {
         position: relative;
+        width: 100%
+        height: 100%;
     }
 
     .data, .weather {

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Place I'd Like to Visit</title>
+    <meta name="author" content="Jennifer Malan">
+    <meta name="description" content="A website about a place I'd like to visit.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>SCOTLAND</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/scotland-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/scotland-medium.webp" media="(min-width: 500px)">
+                <img src="images/scotland-small.webp" alt="image of scotland" width="500" height="250">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <table>
+                
+                <tr>
+                    <td>Area:</td>
+                    <td>30,081 sq mi</td>
+                </tr>
+                <tr>
+                    <td>Population:</td>
+                    <td>5.49 million</td>
+                </tr>
+                <tr>
+                    <td>Capital:</td>
+                    <td>Edinburgh</td>
+                </tr>
+                <tr>
+                    <td>Language:</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>Currency:</td>
+                    <td>Pound sterling</td>
+                </tr>
+                <tr>
+                    <td>Time Zone:</td>
+                    <td>GMT + 1</td>
+                </tr>
+                <tr>
+                    <td>Calling Code:</td>
+                    <td>+44</td>
+                </tr>
+                <tr>
+                    <td>Internet TLD:</td>
+                    <td>.scot</td>
+                </tr>
+            </table>
+        </div>
+        <div class="weather">
+              <h2>Weather</h2>     
+              <img src="images/partly-cloudy.svg" alt="partly cloudy">
+            
+            <table>
+               
+            <tr>
+               
+            </tr>
+            <tr>
+                <td>Temperature:</td>
+                <td>15&degC</td>
+            </tr>
+            <tr>
+                <td>Conditions:</td>
+                <td>Partly cloudy</td>
+            </tr>     
+            <tr>
+                <td>Wind:</td>
+                <td>18 km/h</td>
+            </tr>    
+            <tr>
+                <td>Windchill:</td>
+                <td id="windchill"></td>
+            </tr>
+        </table>
+        </div>
+        </main>
+        <footer> 
+            <p>&copy <span id="year"></span>| Jennifer Malan | Idaho, USA</p>
+            <p id="lastModified"></p></footer>
+</body>
+</html>

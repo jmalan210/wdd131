@@ -24,6 +24,7 @@ h1 {
     background-color:var(--slate);
     padding: 1rem;
     margin: 0;
+    text-shadow: -0.1rem 0.1rem 0.2rem black;
     
 }
 
@@ -31,12 +32,13 @@ h1 {
 .hero img {
     width: 100%;
     height: auto;
+    object-fit: cover;
     border-top: 25px solid var(--black);
     border-bottom: 25px solid var(--black);
-
-        
+    margin: 0;
+    
+       
 }
-
 
 h2 {
     font-family: var(--heading-font);
@@ -86,11 +88,13 @@ td:nth-child(even) {
 
 
 footer {
+    clear: both;
     text-align: center;
     background-color: var(--slate);
     color: white;
     padding: 20px;
-    margin: 0px;
+    margin: 0;
+ 
       
    
 }
@@ -107,7 +111,7 @@ footer {
 
     .weather {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 80%;
         width: auto;
         height: auto;
@@ -129,6 +133,11 @@ footer {
         position: relative;
         right: 8%;
         
+    }
+
+    .marker:after {
+        content: "⛅";
+        font-size: 2rem;
     }
 
     .weather img {

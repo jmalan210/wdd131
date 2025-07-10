@@ -81,6 +81,7 @@ td:nth-child(even) {
 
 .weather img {
     width: 100px;
+    height: auto;
     text-align: center;
     margin: 0 auto;
 }

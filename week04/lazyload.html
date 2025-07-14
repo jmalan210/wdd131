@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demo</title>
+    <meta name="author" content="Jennifer Malan">
+    <meta name="description" content="An exercise in lazy loading images">
+    <link rel="stylesheet" href="styles/lazyload.css"></link>
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading</h1>
+        <picture>
+        <image src="images/cat01.webp" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600"></image>
+        <image src="images/cat02.webp" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600"></image>
+        <image src="images/cat03.webp" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600"></image>
+        <image src="images/cat04.webp" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600"></image>
+        <image src="images/cat05.webp" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600"></image>
+        <image src="images/cat06.webp" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600"></image>
+        </picture>
+    </main>
+
+    <footer>
+        <p>©️<span id="year"></span>| Jennifer Malan | Idaho, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

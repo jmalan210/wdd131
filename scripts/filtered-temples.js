@@ -68,35 +68,35 @@ const temples = [
     location: "Oakland, California, United States",
     dedicated: "1961, January, 23",
     area: 80157,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oakland-california/800x500/01-Oakland-Temple-Exterior-2236889.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oakland-california/320x200/01-Oakland-Temple-Exterior-2236889.jpg"
   },
 {
     templeName: "Paris France",
     location: "Paris, France",
     dedicated: "2017, May, 21",
     area: 44175,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/800x500/paris-france-temple-exterior-1905503.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/2018/320x200/Paris-Temple02.jpg"
   },
 {
     templeName: "Rome Italy",
     location: "Rome, Italy",
     dedicated: "2019, March, 10-12",
     area: 41010,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/800x500/6-Rome-Temple-2160338.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/320x200/1-Rome-Temple-2160936.jpg"
   },
   {
     templeName: "Boston Massachusetts",
     location: "Belmont, Massachusetts",
     dedicated: "2000, October, 1",
     area: 69600,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/boston-massachusetts/800x500/boston-temple-lds-945541-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/boston-massachusetts/320x200/boston-temple-lds-945541-wallpaper.jpg"
   },
   {
     templeName: "Helsinki Finland",
     location: "Espoo, Finland",
     dedicated: "2006, October, 22",
     area: 16350,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/helsinki-finland/400x225/helsinki-finland-temple-lds-354498-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/helsinki-finland/320x180/helsinki-finland-temple-lds-354498-wallpaper.jpg"
   }
   // Add more temple objects here...
 ];

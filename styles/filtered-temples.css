@@ -100,7 +100,9 @@ nav {
     content: "X";
 }
 
-
+main {
+    padding-bottom: 20px;
+}
 
 h2 {
    
@@ -115,15 +117,21 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    max-width: 350px;   
+      
 }
    
 
     .res-grid section {      
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-color: var(--accent-color-1);
         border: 2px solid var(--main-color);
         border-radius: 10px;
         padding: 5px;
+        max-width: 315px;
+        
     }
 
     .res-grid h3 {
@@ -139,8 +147,7 @@ h2 {
     }
 
     .res-grid p {
-        font-family: var(--text-font);
-        text-align: left;       
+        font-family: var(--text-font);    
         padding-left: 20px;
     }
 
@@ -156,5 +163,8 @@ h2 {
 
 footer {
     text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
 }
 

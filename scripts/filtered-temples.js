@@ -63,14 +63,58 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
+  {
+    templeName: "Oakland California",
+    location: "Oakland, California, United States",
+    dedicated: "1961, January, 23",
+    area: 80157,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oakland-california/800x500/01-Oakland-Temple-Exterior-2236889.jpg"
+  },
+{
+    templeName: "Paris France",
+    location: "Paris, France",
+    dedicated: "2017, May, 21",
+    area: 44175,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/800x500/paris-france-temple-exterior-1905503.jpg"
+  },
+{
+    templeName: "Rome Italy",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10-12",
+    area: 41010,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/800x500/6-Rome-Temple-2160338.jpg"
+  },
+  {
+    templeName: "Boston Massachusetts",
+    location: "Belmont, Massachusetts",
+    dedicated: "2000, October, 1",
+    area: 69600,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/boston-massachusetts/800x500/boston-temple-lds-945541-wallpaper.jpg"
+  },
+  {
+    templeName: "Helsinki Finland",
+    location: "Espoo, Finland",
+    dedicated: "2006, October, 22",
+    area: 16350,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/helsinki-finland/400x225/helsinki-finland-temple-lds-354498-wallpaper.jpg"
+  }
   // Add more temple objects here...
 ];
 
-createTempleCard();
+const homeTemplesLink = document.querySelector("#home");
+const oldTemplesLink = document.querySelector("#old");
+const newTemplesLink = document.querySelector("#new");
+const largeTemplesLink = document.querySelector("#large");
+const smallTemplesLink = document.querySelector("#small");
 
-function createTempleCard() {
+createTempleCard(temples);
 
-    temples.forEach(temple => {
+
+  
+function createTempleCard(temples) {
+   document.querySelector(".res-grid").innerHTML = "";
+  temples.forEach(temple => {
+        
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -85,7 +129,7 @@ function createTempleCard() {
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
-
+        
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedication);
@@ -94,6 +138,46 @@ function createTempleCard() {
 
         document.querySelector(".res-grid").appendChild(card);
     });
-
 }
 
+homeTemplesLink.addEventListener("click", () => {
+  let title = document.querySelector("h2")
+  title.textContent = "All Temples";
+  createTempleCard(temples);
+});
+
+const oldTemples = temples.filter(temple => new Date(temple.dedicated) < new Date(1900, 1, 1));
+
+oldTemplesLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+  let title = document.querySelector("h2")
+  title.textContent = ("Temples Built Before 1900");
+  createTempleCard(oldTemples);
+});
+
+const newTemples = temples.filter(temple => new Date(temple.dedicated) > new Date(2000, 12, 31));
+
+newTemplesLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+  let title = document.querySelector("h2")
+  title.textContent = ("Temples Built After 2000");
+  createTempleCard(newTemples);
+})
+  
+const largeTemples = temples.filter(temple => temple.area > 90000);
+
+largeTemplesLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+  let title = document.querySelector("h2")
+  title.textContent = ("Temples Larger Than 90,000 sq. ft.");
+  createTempleCard(largeTemples);
+});
+
+const smallTemples = temples.filter(temple => temple.area < 10000);
+
+smallTemplesLink.addEventListener("click", () => {
+  document.querySelector(".res-grid").innerHTML = "";
+  let title = document.querySelector("h2")
+  title.textContent = ("Temples Smaller Than 10,000 sq. ft.");
+  createTempleCard(smallTemples);
+});

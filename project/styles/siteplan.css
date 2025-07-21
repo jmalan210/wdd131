@@ -49,6 +49,11 @@ main {
     text-decoration: none;
 }
 
+.scriptfont {
+    font-family: var(--accent-font);
+    font-size: 3rem;
+}
+
 .wireframe {
     grid-column: 1/3;
     display: grid;
@@ -69,7 +74,7 @@ section {
     margin: 20px;
     border-radius: 20px;
     background-color: var(--blush);
-    border: 3px solid var(--coral);
+    border: 3px solid var(--light-grey);
     
 }
 

@@ -1,0 +1,160 @@
+:root {
+    --dark-blue: #003049;
+    --light-blue: #a1c5dc;
+    --red: #c1121f;
+    --green: #006400;
+    --font: "Roboto", sans-serif;
+}
+
+*{
+    font-family: var(--font);
+    width: 100%;
+    padding: 0;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--dark-blue);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.review {
+    border: 2px solid var(--dark-blue);
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border-radius: 6px;
+   }
+
+fieldset {
+    border: none;
+    padding: 2%;
+    
+}
+
+div {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+
+
+.review input[type="date"],
+.review select, 
+.review textarea, 
+.review input[type="text"] {
+    width: 96%;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--dark-blue);
+    text-indent: 5px;
+    
+  } 
+
+.review input[type="radio"]{
+    display: none;
+    position: relative;
+    caret-color: rgba(0,0,0,0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    
+}
+
+.stars label {
+    color: var(--dark-blue);
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    caret-color: rgba(0,0,0,0);
+}
+
+.stars label:hover {
+    color: #000;
+}
+
+.stars label:before {
+    content: "\2606";
+}
+
+.stars input:checked ~ label:before {
+    content: "\2605";
+}
+
+.checkbox {
+    font-weight: normal;
+    display:grid;
+    grid-template-columns: 1fr 12fr;
+    grid-gap: 10px
+   
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+}
+
+.button {
+    width: 96%;
+    margin: 20px 0 2%;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: white;
+    border-radius: 6px;
+    background-image: linear-gradient(var(--dark-blue), #245a78);
+    box-shadow: 5px 2px 2px var(--dark-blue);
+}
+
+footer{
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/*Review.html css */
+.counterparagraph {
+    text-align: center;
+    font-family: var(--font);
+    font-size: 1.5rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--light-blue);
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+.counterparagraph a {
+    text-decoration: none;
+    color: darkred;
+}
+.counterparagraph a:hover {
+    color: rgb(66, 10, 66);
+}
+
+
+#counter {
+    font-size: 2rem;
+
+}
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Jennifer Malan">
+    <meta name="description" content="An exercise in building HTML forms, designing them with CSS, and using javascript to keep a counter.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+</head>
+<body>
+    
+    <main>
+        <h1>Product Review</h1>
+    <form action="review.html" method="get" class="review" id="reviewform">
+    
+    <fieldset>
+      
+      <div>Product Selection</div>
+       <label for="productselection"><select name="productname" id="productselection" required>
+            <option value="select" selected disabled >Select a Product...</option>
+        </select></label>
+       
+        <div>Overall Rating</div>
+        <div class="stars">
+        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+	    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+	    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+	    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+	    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </div>
+     
+
+        <div>Date of Installation</div>
+        <label for="date"><input type="date" name="date" id="date"></label>
+
+
+        <div>Which features did you find useful in the product?<br><i>(Check all that apply)</i></div>
+        <div class="checkbox">
+        <input type="checkbox" name="design" id="design" value="yes" > <label>Design</label>
+        <input type="checkbox" name="durability" id="durability" value="yes" ><label>Durability</label>
+        <input type="checkbox" name="ease" id="ease" value="yes"><label>Ease of Use</label>
+        <input type="checkbox" name="performance" id="performance" value="yes"><label>Performance</label>  
+        </div>
+
+        <div>Written Review (optional)</div>
+           <label for="writtenreview"><textarea name="review" id="writtenreview" rows="5" cols="50"></textarea></label> 
+        
+          <div>Your Name(optional)</div>
+               <label for="yourname"><input type="text" name="yourname" id="yourname"></label>
+            
+   
+         <input type="submit" value="Post Review" class="button" id="submitbutton">
+    </fieldset>         
+       
+    </form>
+    </main>
+    <footer>
+         <p>&copy;<span id="year"></span>| Jennifer Malan | Idaho, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

@@ -22,13 +22,13 @@
     
     <fieldset>
       
-        <div>
-       <label for="productselection" class="label">Product Selection</label><select name="productname" id="productselection" required>
+        <div class="rqd">
+       <label for="productselection" class="label" >Product Selection*</label><select name="productname" id="productselection" required>
             <option value="" selected disabled >Select a Product...</option>
         </select>
         </div>
-       <div>
-        <label class="label">Overall Rating</label>
+       <div class="rqd">
+        <label class="label">Overall Rating*</label>
         <div class="stars">
         <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
 	    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -39,8 +39,8 @@
         </div>
      
 
-        <div>
-        <label for="date" class="label">Date of Installation</label><input type="date" name="date" id="date">
+        <div class="rqd">
+        <label for="date" class="label">Date of Installation*</label><input type="date" name="date" id="date" required>
         </div>
 
         <div>

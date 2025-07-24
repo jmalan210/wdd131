@@ -8,7 +8,6 @@
 
 *{
     font-family: var(--font);
-    /* width: 100%; */
     padding-left: 1%;
     max-width: 450px;
     margin: 0 auto;
@@ -38,12 +37,14 @@ fieldset {
 }
 
 div {
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding-top: 20px;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+.label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
 
 .review input[type="date"],
 .review select, 
@@ -56,6 +57,7 @@ div {
     border-radius: 6px;
     border: 1px solid var(--dark-blue);
     text-indent: 5px;
+    margin-top: 3px;
     
   } 
 
@@ -68,6 +70,7 @@ div {
 .stars {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
     margin-left: -10px;
     margin-bottom: 10px;
     
@@ -98,16 +101,25 @@ div {
 
 .checkbox {
     font-weight: normal;
-    display:grid;
-    grid-template-columns: 1fr 12fr;
-    grid-gap: 10px
-   
-}
+    padding-top: 10px;
+    padding-bottom: 20px;   
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    grid-gap: 10px;
+    justify-self: start;
+    align-items: center;
+
+    
+ }
 
 .checkbox input {
     width: 20px;
     height: 20px;
     border-radius: 6px;
+}
+
+.checkbox label {
+    margin-left: 10px;
 }
 
 .button {

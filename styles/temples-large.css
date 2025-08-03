@@ -8,29 +8,7 @@
         text-align: left;
     }
 
-    nav {
-        align-self: center;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction:row;
-        justify-content: right;
-        padding-right: 20px;
-        
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%
-    }
-    .navigation a {
-        text-align: center;
-    }
-
-    #menu {
-        display: none;
-    }
+    
 
 
 

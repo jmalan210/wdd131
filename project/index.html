@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - Home</title>
+    <meta name="author" content="Jennifer Malan">
+    <meta name="description" content="Page 1 for the Wdd 131 Final Project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Birthstone&family=Gotu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/selection.js" defer></script>
+    <script src="scripts/hambutton.js" defer></script>
+</head>
+<body>
+     
+    <nav>
+       <a id ="menu" href="#"></a>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="images/logo.svg" alt="logo" class="logo">
+        <h1>Jennifer Malan Graphic Design</h1>
+    </header>
+    <main>
+       <form action="thanks.html" class="contact">
+        
+        <fieldset>
+            <legend>Contact Me</legend>
+            
+            <label for="fname" >First Name*</label><input type="text" id="fname" placeholder="Mary">
+            
+            <label for="lname" >Last Name*</label><input type="text" id="lname" placeholder="Jones">
+           
+            <label for="phone">Phone Number*</label><input type="tel" id="phone" placeholder="555-123-4567">
+
+            <label for="email">Email*</label><input type="email"  id="email" placeholder="someone@somewhere.com">
+
+            <label for="interest">I am interested in:*</label><select name="interest" id="interest" required>
+            <option value="" selected disabled >Select one</option></select>
+            <div>
+               <label for="checkbox"><input type="checkbox" id="checkbox">Subscribe to newsletter</label>
+            </div>
+            <input type="submit" value="Contact" class="button" id="submitbutton">
+        </fieldset>
+       </form>
+        <section class="locationcard">
+            <h2>Location</h2>
+            <p>321 Magnolia Street<br>Pocatello, ID 83201<br><br>(Office) 208-123-4567<br>(Mobile) 208-789-0123<br><br>jmalan@jmdesigns.com</p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187154.83727431667!2d-112.80757440672292!3d42.86663137354049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1753585843878!5m2!1sen!2sus" width="400" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span>| Jennifer Malan | Idaho, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

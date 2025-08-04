@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hambutton.js" defer></script>
+    <script src="scripts/portfolio.js" defer></script>
 </head>
 <body>
     <nav>
@@ -26,10 +27,31 @@
         <img src="images/logo.svg" alt="logo" class="logo">
         <h1>Jennifer Malan Graphic Design</h1>
     </header>
-    <main>
+        <nav>
+        <ul class="portfolionav">
+            <a id ="menu2" href="#"></a>
+            <li><a href="#" id="all">All Images</a></li>
+            <li><a href="#" id="logo">Logos</a></li>
+            <li><a href="#" id="posters">Posters</a></li>
+            <li><a href="#" id="print">Print & Stationery</a></li>
+            <li><a href="#" id="web">Web Design</a></li>
+            <li><a href="#"id="whimsical">Whimsical</a></li>
+
+        </ul>
+    </nav>
+    
+    <main class="portfoliomain">
+
+        <h2>Portfolio</h2>
+        <div class="image-grid"></div>
       
     </main>
     <footer>
+        <div id="icons">
+        <a href="facebook.com"><img src="images/facebook.webp" alt="Facebook logo" class="socialmedia"></a>
+        <a href="instagram.com"><img src="images/instagram.png" alt="Facebook logo" class="socialmedia"></a>
+        <a href="pinterest.com"><img src="images/pinterest.png" alt="Facebook logo" class="socialmedia"></a>
+        </div>
         <p>&copy;<span id="year"></span>| Jennifer Malan | Idaho, USA</p>
         <p id="lastModified"></p>
     </footer>

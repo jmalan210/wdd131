@@ -149,3 +149,64 @@ function createImageCard(images) {
     });
 }
 
+allImagesLink.addEventListener("click", () => {
+    let title = document.querySelector("h2")
+    title.textContent = ("All Images");
+    createImageCard(images);
+    
+});
+
+const logos = images.filter(image => image.category === "logo");
+const posters = images.filter(image => image.category === "posters");
+const print = images.filter(image => image.category === "print");
+const web = images.filter(image => image.category === "web");
+const whimsical = images.filter(image => image.category === "whimsical");
+
+
+logosLink.addEventListener("click", () => {
+    document.querySelector(".image-grid").innerHTML = "";
+    let title = document.querySelector("h2")
+    title.textContent = ("Logos");
+    createImageCard(logos);
+
+});
+
+
+
+postersLink.addEventListener("click", () => {
+    document.querySelector(".image-grid").innerHTML = "";
+    let title = document.querySelector("h2")
+    title.textContent = ("Posters");    
+    createImageCard(posters);
+
+});
+
+
+
+printLink.addEventListener("click", () => {
+    document.querySelector(".image-grid").innerHTML = "";
+    let title = document.querySelector("h2")
+    title.textContent = ("Print & Stationery");
+    createImageCard(print);
+
+});
+
+
+
+webLink.addEventListener("click", () => {
+    document.querySelector(".image-grid").innerHTML = "";
+    let title = document.querySelector("h2")
+    title.textContent = ("Web Design");
+    createImageCard(web);
+
+});
+
+
+
+whimLink.addEventListener("click", () => {
+    document.querySelector(".image-grid").innerHTML = "";
+    let title = document.querySelector("h2")
+    title.textContent = ("Whimsical");
+    createImageCard(whimsical);
+
+});

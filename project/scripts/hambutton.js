@@ -6,3 +6,12 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
+const mainnavTwo = document.querySelector('.portfolionav');
+const hambuttonTwo = document.querySelector('#menu2');
+
+hambuttonTwo.addEventListener('click', () => {
+    mainnavTwo.classList.toggle('open');
+    hambuttonTwo.classList.toggle('open');
+});
+
+

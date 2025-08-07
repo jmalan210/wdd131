@@ -143,7 +143,7 @@ function createImageCard(images) {
 }
 
 allImagesLink.addEventListener("click", () => {
-    let title = document.querySelector("h2")
+    let title = document.querySelector("h3")
     title.textContent = ("All Images");
     createImageCard(images);
     
@@ -158,7 +158,7 @@ const abstract = images.filter(image => image.category === "abstract");
 
 logosLink.addEventListener("click", () => {
     document.querySelector(".image-grid").innerHTML = "";
-    let title = document.querySelector("h2")
+    let title = document.querySelector("h3")
     title.textContent = ("Logos");
     createImageCard(logos);
 
@@ -168,7 +168,7 @@ logosLink.addEventListener("click", () => {
 
 postersLink.addEventListener("click", () => {
     document.querySelector(".image-grid").innerHTML = "";
-    let title = document.querySelector("h2")
+    let title = document.querySelector("h3")
     title.textContent = ("Posters");    
     createImageCard(posters);
 
@@ -178,7 +178,7 @@ postersLink.addEventListener("click", () => {
 
 printLink.addEventListener("click", () => {
     document.querySelector(".image-grid").innerHTML = "";
-    let title = document.querySelector("h2")
+    let title = document.querySelector("h3")
     title.textContent = ("Print & Stationery");
     createImageCard(print);
 
@@ -188,7 +188,7 @@ printLink.addEventListener("click", () => {
 
 webLink.addEventListener("click", () => {
     document.querySelector(".image-grid").innerHTML = "";
-    let title = document.querySelector("h2")
+    let title = document.querySelector("h3")
     title.textContent = ("Web Design");
     createImageCard(web);
 
@@ -198,7 +198,7 @@ webLink.addEventListener("click", () => {
 
 abstractLink.addEventListener("click", () => {
     document.querySelector(".image-grid").innerHTML = "";
-    let title = document.querySelector("h2")
+    let title = document.querySelector("h3")
     title.textContent = ("Abstract");
     createImageCard(abstract);
 

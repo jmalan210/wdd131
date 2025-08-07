@@ -1,16 +1,26 @@
+const mainnavTwo = document.querySelector('.portfolionav');
+const hambuttonTwo = document.querySelector('#menu2');
+
+hambuttonTwo.addEventListener('click', () => {
+    mainnavTwo.classList.toggle('open');
+    hambuttonTwo.classList.toggle('open');
+});
+
+
+
 const images = [
     {
         imageName: "Health Poster One",
         description: "A health poster campaign for Word Health Org.",
         category: "posters",
-        fileName: "images/portfolio1.webp"
+        fileName: "images/portfolio1.jpg"
 
     },
     {
         imageName: "Health Poster Two",
         description: "A health poster campaign for Word Health Org.",
         category: "posters",
-        fileName: "images/portfolio2.webp"
+        fileName: "images/portfolio2.jpg"
 
     },
     {
@@ -27,42 +37,24 @@ const images = [
         fileName: "images/portfolio4.webp"
 
     },
-    {
-        imageName: "Jewel Beetle",
-        description: "Image of a Jewel Beetle",
-        category: "whimsical",
-        fileName: "images/portfolio5.jpg"
-    },
+    
     {
         imageName: "Font Poster",
         description: "A poster celebrating a font family",
         category: "posters",
-        fileName: "images/portfolio6.jpg"
+        fileName: "images/portfolio6.webp"
 
     },
 
-    {
-        imageName: "Whimsy in Photoshop",
-        description: "An exercise in whimsy.",
-        category: "whimsical",
-        fileName: "images/portfolio7.webp"
-
-    },
+    
     {
         imageName: "Morsl Logo",
         description: "A logo for a fictional company",
         category: "logo",
-        fileName: "images/portfolio8.jpg"
+        fileName: "images/portfolio8.webp"
 
     },
-    {
-        imageName: "JM Design Logo",
-        description: "A logo for a fictional company",
-        category: "logo",
-        fileName: "images/logo.svg"
-
-    },
-    
+        
     {
         imageName: "Book Cover One",
         description: "A typography cover for a book",
@@ -77,24 +69,18 @@ const images = [
         fileName: "images/portfolio10.jpg"
 
     },
-    {
-        imageName: "Robot City",
-        description: "An exercise in Adobe Illustrator",
-        category: "whimsical",
-        fileName: "images/portfolio11.webp"
-
-    },
+    
     {
         imageName: "Typography Experiment One",
         description: "A typography experiment",
-        category: "whimsical",
+        category: "abstract",
         fileName: "images/portfolio12.webp"
 
     },
     {
         imageName: "Typography Experiment Two",
         description: "A typography experiment",
-        category: "whimsical",
+        category: "abstract",
         fileName: "images/portfolio13.webp"
 
     },
@@ -118,6 +104,12 @@ const images = [
         category: "web",
         fileName: "images/portfolio16.webp"
 
+    },
+    {
+        imageName: "Business Logo",
+        description: "An original logo design",
+        category: "logo",
+        fileName: "images/portfolio17.svg"
     }
 
 
@@ -128,7 +120,7 @@ const logosLink = document.querySelector("#logo");
 const postersLink = document.querySelector("#posters");
 const printLink = document.querySelector("#print");
 const webLink = document.querySelector("#web");
-const whimLink = document.querySelector("#whimsical");
+const abstractLink = document.querySelector("#abstract");
 
 createImageCard(images);
 
@@ -142,6 +134,7 @@ function createImageCard(images) {
         img.setAttribute("alt", `${image.imageName}`);
         img.setAttribute("loading", "lazy");
         img.setAttribute("width", "300");
+        img.setAttribute("height", "auto")
 
         card.appendChild(img);
 
@@ -160,7 +153,7 @@ const logos = images.filter(image => image.category === "logo");
 const posters = images.filter(image => image.category === "posters");
 const print = images.filter(image => image.category === "print");
 const web = images.filter(image => image.category === "web");
-const whimsical = images.filter(image => image.category === "whimsical");
+const abstract = images.filter(image => image.category === "abstract");
 
 
 logosLink.addEventListener("click", () => {
@@ -203,10 +196,10 @@ webLink.addEventListener("click", () => {
 
 
 
-whimLink.addEventListener("click", () => {
+abstractLink.addEventListener("click", () => {
     document.querySelector(".image-grid").innerHTML = "";
     let title = document.querySelector("h2")
-    title.textContent = ("Whimsical");
-    createImageCard(whimsical);
+    title.textContent = ("Abstract");
+    createImageCard(abstract);
 
 });

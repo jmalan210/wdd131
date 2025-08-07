@@ -1,7 +1,7 @@
 :root{
-    --heading-font: 'Aboreto', 'Arial' sans-serif;
-    --text-font: "Gotu", 'Arial', serif;
-    --accent-font: "Birthstone",'Arial', sans-serif;
+    --heading-font: 'Aboreto', Arial, sans-serif;
+    --text-font: "Gotu", Arial, serif;
+    --accent-font: "Birthstone", Arial, sans-serif;
     --blush: #f3d1cd;
     --coral: #e07870;
     --dark-grey: #0e0f0f;
